@@ -1,0 +1,13 @@
+:root {
+  --ring: rgba(20, 184, 166, 0.45);
+}
+button:focus-visible, input:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 4px var(--ring);
+  transition: box-shadow .15s ease;
+}
+
+@keyframes pulse {
+  0%,100% { filter: brightness(1.0); transform: translateZ(0); }
+  50% { filter: brightness(1.2); transform: scale(1.03); }
+}
