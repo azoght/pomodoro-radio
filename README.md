@@ -9,7 +9,6 @@ A soothing Pomodoro timer with integrated lofi music streaming, inspired by the 
 - 🎧 **Audio Controls** - Volume sliders for music, rain, and vinyl effects
 - 🎛️ **Speed Control** - Adjustable playback speed (0.85x to 1.2x)
 - 🌧️ **Ambient Sounds** - Rain and vinyl crackle effects
-- 📱 **PWA Support** - Install as a web app on your device
 - 🔔 **Sound Notifications** - Audio alerts for session transitions
 - 📊 **Session Tracking** - Visual progress through work/break cycles
 
@@ -17,7 +16,7 @@ A soothing Pomodoro timer with integrated lofi music streaming, inspired by the 
 
 This project is a remix of the original [Lofi.FM](https://github.com/Lofi-FM/Lofi.FM) repository by [@Lofi-FM](https://github.com/Lofi-FM), enhanced with Pomodoro timer functionality.
 
-**Inspiration**: [Lofi Girl Pomodoro Live Stream](https://www.youtube.com/watch?v=1oDrJba2PSs) - The iconic 24/7 lofi study stream that inspired this project.
+**Inspiration**: [Lofi Girl Pomodoro Live Stream](https://www.youtube.com/watch?v=1oDrJba2PSs)
 
 ## How to Run Locally
 

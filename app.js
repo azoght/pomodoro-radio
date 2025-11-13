@@ -26,7 +26,7 @@ const UI = {
   PLAYBACK_RATE_UPDATE_DELAY_MS: 100
 };
 
-const VERSION = 'v1.0';
+const VERSION = 'v1.1';
 
 // Lofi music streams
 const streams = {
@@ -313,13 +313,11 @@ function bindUI() {
       mainGain.gain.value = parseFloat(els.volMusic.value);
     }
     
-    if (els.radio.src !== streams.main) {
-      els.radio.src = streams.main;
-    }
-    
-    els.radio.playbackRate = AUDIO.DEFAULT_SPEED;
-    
     if (els.radio.paused) {
+      // When resuming from pause, restart the stream to get current content
+      els.radio.src = streams.main;
+      els.radio.playbackRate = parseFloat(els.speed.value);
+      
       try {
         await els.radio.play();
         els.btnPlay.textContent = '| |';
